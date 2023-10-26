@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select</title>
+</head>
+<body>
+    <div>
+        <form action="" method="post">
+
+            <label for="phone"></label>
+            <select name="UserPhone" id="phone">
+                <option disabled selected>Выберите модель</option>
+
+                <optgroup label="APPLE">
+                    <option value="IPhone 7">IPHONE 7</option>
+                    <option value="IPhone 8">IPHONE 8</option>
+                    <option value="IPhone 9">IPHONE 9</option>
+                    <option value="IPhone 10">IPHONE 10</option>
+                    <option value="IPhone 11" selected>IPHONE 11</option>
+                </optgroup>
+
+                <optgroup label="SAMSUNG">
+                    <option value="SAMSUNG 7">GALAXY S7</option>
+                    <option value="SAMSUNG 8">GALAXY S8</option>
+                    <option value="SAMSUNG 9">GALAXY S9</option>
+                    <option value="SAMSUNG 10">GALAXY S10</option>
+                    <option value="SAMSUNG 11">GALAXY S11</option>
+                </optgroup>
+
+            </select>
+
+            <p>       
+                <input type="submit" name="submit" value="отправить">
+                <input type="reset" name="reset" value="отмена">
+            </p>
+
+        </form>
+    </div>
+</body>
+</html>

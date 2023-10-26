@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    
+</head>
+<body>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+    </style>
+    <style>
+        form{text-align: right;}
+    </style>
+
+    <form action="" method="post" autocomplete="off">
+        <p>
+            <label for="Prise">Необходимое колличество</label>
+            <input list="PriseList" type="number" 
+            step="5" min="0" max="100" value="0" id="Prise" name="Prise" > 
+            <input type="submit"  name="submit" value="Отправить">
+        </p>
+    </form>
+    <datalist id="PriseList">
+        <option value="10 шт.">100 dollars</option> 
+        <option value="15 шт." >120 dollars</option>
+        <option value="20 шт.">140 dollars</option>
+    </datalist>
+</body>
+</html>

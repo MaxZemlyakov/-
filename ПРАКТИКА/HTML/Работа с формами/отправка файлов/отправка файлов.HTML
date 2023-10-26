@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    
+</head>
+<body>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+    </style>
+    <style>
+        form
+            {
+            text-align: right;
+            margin-right: 300px;
+            padding-right: 0px;
+            }
+    </style>
+
+    <form enctype="multipart/form-data" action="" method="post" >
+        <p>
+
+            <input type="file" name="file">
+        </p>
+        <!--accept устанавливает тип файла, которые допустимы для выбора-->
+        <p>
+            <label for="file">Выберите файл:</label>
+            <input type="file" name="file" id="file" accept=".png, .jpg, .txt">
+        </p>
+         <!--multiple позволяет выбирть множество файлов-->
+        <p>
+            <label for="multiple">Выберите файл:</label>
+            <input type="file" name="file" id="multiple" multiple>
+        </p>
+         <!--required  требует обязательной установки файла-->
+        <p>
+            <label for="required">Выберите файл:</label>
+            <input type="file" name="file" id="required" required>
+        </p>
+
+        <p>       
+            <input type="submit" name="submit" value="отправить">
+            <input type="reset" name="reset" value="отмена">
+        </p>
+
+    </form>
+    
+</body>
+</html>

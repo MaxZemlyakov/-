@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    
+</head>
+
+<!-- 
+    required: требует обязательного ввода значения. Для элементов textarea, select, input (с типом text, password, checkbox, radio, file, datetime-local, date, month, time, week, number, email, url, search, tel)
+    min и max: минимально и максимально допустимые значения. Для элемента input с типом datetime-local, date, month, time, week, number, range
+    pattern: задает шаблон, которому должны соответствовать вводимые данные. Для элемента input с типом text, password, email, url, search, tel
+    ОТКЛЮЧЕНИЕ ВАЛИДАЦИИ:Не всегда валидация является желаемой, иногда требуется ее отключить. И в этом случае мы можем использовать либо у элемента формы атрибут novalidate, либо у кнопки отправки атрибут formnovalidate
+-->
+<body>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+    </style>
+    <style>
+        form
+            {
+            text-align: right;
+            margin-right: 300px;
+            padding-right: 0px;
+            }
+    </style>
+
+    <form action="" method="post">
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="IvanIvanov@mail.ru" pattern="IvanIvanov@mail.ru" required>
+        </p>
+        <p>
+            <label for="url">Url:</label>
+            <input type="url" name="url" id="url" required>
+        </p>
+        <p>
+            <label for="PhoneNumber">Телефон:</label>
+            <input type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="(XXX)XXX-XXXX" required>
+        </p>
+
+        <p>       
+            <input type="submit" name="submit" value="отправить">
+            <input type="reset" name="reset" value="отмена">
+        </p>
+
+    </form>
+    
+</body>
+</html>
