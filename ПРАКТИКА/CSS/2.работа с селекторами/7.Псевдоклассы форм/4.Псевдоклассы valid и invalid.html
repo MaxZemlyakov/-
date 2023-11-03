@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            input:invalid {
+                border: 2px solid red;   /*тут важно чтобы в инпуте стоял атрибут "required"*/
+            }
+            input:valid {
+                border: 2px solid green;
+            }
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <p><input type="login" name="login" placeholder="login" required></p>
+        <p><input type="password" name="pass" placeholder="password" required></p>
+        <p><input type="reset" value="exit"><input type="submit" value="sent"></p>
+    </form>
+</body>
+</html>

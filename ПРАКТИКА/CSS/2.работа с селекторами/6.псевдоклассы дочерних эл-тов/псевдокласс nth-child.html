@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--стилизируем для начала четные нечетные строки:
+    tr:nth-child(odd) { background-color: #bbb; } 
+    tr:nth-child(even) { background-color: #fff; }-->
+    <!--Также в этот селектор мы можем передать номер стилизуемого элемента:
+    tr:nth-child(3) { background-color: #bbb; }-->
+    <style>
+            .table             
+            tr:nth-child(odd) { background-color: #bbb; } 
+            tr:nth-child(even) { background-color: #fff; }
+            tr:nth-child(4) { background-color: #ae0e0e; }
+
+    </style>
+</head>
+<body>
+    <div class="table">
+        <table>
+            <tr><td style="color: aquamarine;">слово</td><td>слово</td><td>слово</td><td>слово</td></tr>
+            <tr><td>слово</td><td>слово</td><td>слово</td><td>слово</td></tr>
+            <tr><td>слово</td><td>слово</td><td>слово</td><td>слово</td></tr>
+            <tr><td>слово</td><td>слово</td><td>слово</td><td>слово</td></tr>
+            <tr><td>слово</td><td>слово</td><td>слово</td><td>слово</td></tr>
+        </table>
+    </div>
+</body>
+</html>
