@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Так, в данном случае, все три стиля не конфликтуют между собой, 
+    поэтому все эти стили будут применяться к ссылке:-->
+    <style>
+        .footer a{color: red;}/*раскрасили ссылку*/
+        .redlink {font-weight: bold;}/*сделали ее жирной*/
+        a{text-decoration: none;}/*убрал подчеркавание*/
+    </style>
+</head>
+<body>
+    <p class="footer">Для просмотра подробной информации пройдите по ссылке: 
+        <a class="redLink" href="http://wikipedia.ru">Основы CSS 3</a></p>
+</body>
+</html>

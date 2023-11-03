@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :checked + span{
+            color: rgb(63, 165, 52);
+
+ 
+         }
+    </style>
+</head>
+<body>
+        <div>
+            <form action="" method="get">
+                <h2>Выбериите технологию</h2>
+                <p>
+                    <input type="checkbox" checked name="html5"> <span>HTML5</span>
+                </p>
+                <p>
+                    <input type="checkbox" name="css3"> <span>CSS3</span>
+                </p>
+                <p>
+                    <input type="checkbox" name="php"> <span>PHP</span>
+                </p>
+                <h2>Согласны ли вы с обработкой данных?</h2>
+                <p>
+                    <input type="radio" value="variant1" name="variant" checked >согласен
+                </p>
+                <p>
+                    <input type="radio" value="variant2" name="variant">не согласен
+                </p>
+                <p><input type="reset" value="exet"> <input type="submit" value="sent"></p>
+            </form>
+        </div>
+</body>
+</html>
