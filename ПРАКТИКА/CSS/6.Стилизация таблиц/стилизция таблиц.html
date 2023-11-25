@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 2px solid black;
+            border-spacing: 5px; /*border-spacing: устанавливает промежутки между границами смежных ячеек*/
+        }
+
+        td, th{
+            border: solid 1px black;
+        }
+        .collapsed{/*смежные ячейки имеют общую границу*/
+            border-collapse: collapse; /*border-collapse: устанавливает, как будет стилизоваться граница смежных ячеек*/
+        }
+        .separated{/*смежные ячейки имеют отдельные границы, которые разделяются пространством*/
+            border-collapse:separate;
+        }
+        .hidden-empty-cells{
+            empty-cells: hide;/*Hide-убирает прорисовку незаполненых ячеек*/
+        }
+        .captionBottom{
+            caption-side: bottom; 
+            /*Свойство caption-side управляет позицией заголовка и может принимать следующие значения:
+                top: позиционирование заголовка вверху (значение по умолчанию)
+                bottom: позиционирование заголовка внизу*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Collapse</h3>
+    <table class="collapsed">
+        <tr><th>Модель</th><th>Производитель</th><th>Цена</th></tr>
+        <tr><td>Lumia 950</td><td>Microsoft</td><td>29900</td></tr>
+        <tr><td>iPhone 6S</td><td>Apple</td><td>52900</td></tr>
+        <tr><td>Nexus 6P</td><td>Huawei</td><td>49000</td></tr>
+    </table>
+    <h3>Separate</h3>
+    <table class="separated">
+        <tr><th>Модель</th><th>Производитель</th><th>Цена</th></tr>
+        <tr><td>G 5</td><td>LG</td><td>44900</td></tr>
+        <tr><td>HTC 10</td><td>HTC</td><td>49900</td></tr>
+        <tr><td>Nexus 5X</td><td>Google/LG</td><td>25000</td></tr>
+    </table>
+    </div>
+    <div>
+        <h3>Show</h3>
+        <table>
+            <tr><th>Модель</th><th>Производитель</th><th>Цена</th></tr>
+            <tr><td>Lumia 950</td><td>Microsoft</td><td>29900</td></tr>
+            <tr><td>iPhone 6S</td><td></td><td></td></tr>
+            <tr><td>Nexus 6P</td><td>Huawei</td><td>49000</td></tr>
+        </table>
+        <h3>Hide</h3>
+        <table class="hidden-empty-cells"> <!--пустые ячейки(Hide-убирает прорисовку незаполненых ячеек
+            show- наоборот прорисовывает)-->
+            <tr><th>Модель</th><th>Производитель</th><th>Цена</th></tr>
+            <tr><td>G 5</td><td>LG</td><td>44900</td></tr>
+            <tr><td>HTC 10</td><td></td><td></td></tr>
+            <tr><td>Nexus 5X</td><td>Google/LG</td><td>25000</td></tr>
+        </table>
+    </div>
+    <div>
+        <h3>Top</h3>
+        <table>
+            <caption>Флагманы 2015 года</caption> <!--каптоин - заголовок-->
+            <tr><th>Модель</th><th>Производитель</th><th>Цена</th></tr>
+            <tr><td>Lumia 950</td><td>Microsoft</td><td>29900</td></tr>
+            <tr><td>iPhone 6S</td><td>Apple</td><td>52900</td></tr>
+            <tr><td>Nexus 6P</td><td>Huawei</td><td>49000</td></tr>
+        </table>
+        <h3>Bottom</h3>
+        <table class="captionBottom">
+            <caption>Новинки 2016 года</caption>
+            <tr><th>Модель</th><th>Производитель</th><th>Цена</th></tr>
+            <tr><td>G 5</td><td>LG</td><td>44900</td></tr>
+            <tr><td>HTC 10</td><td>HTC</td><td>49900</td></tr>
+            <tr><td>iPhone SE</td><td>Apple</td><td>37000</td></tr>
+        </table>
+    </div>
+    
+</body>
+</html>
